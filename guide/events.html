@@ -163,7 +163,7 @@
 <p>它也预置了一些常用的按键名：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 效果同上 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">v-on</span>=<span class="value">"keyup:submit | key 'enter'"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>查看API参考：<a href="../api/filters.html#key">key 过滤器的全部预设参数</a>.</p>
-<h2 id="为什么要在_HTML_中写监听器？">为什么要在 HTML 中写监听器？</h2><p>你可能会注意到整个事件监听的方式违背了 “separation of concern” 的传统理念。不必担心，因为所有的 Vue.js 时间处理方法和表达式都严格绑定在当前视图的 ViewModel 上，它不会导致任何维护困难。实际上，使用 <code>v-on</code> 还有更多好处：</p>
+<h2 id="为什么要在_HTML_中写监听器？">为什么要在 HTML 中写监听器？</h2><p>你可能会注意到整个事件监听的方式违背了 “separation of concern” 的传统理念。不必担心，因为所有的 Vue.js 事件处理方法和表达式都严格绑定在当前视图的 ViewModel 上，它不会导致任何维护困难。实际上，使用 <code>v-on</code> 还有更多好处：</p>
 <ol>
 <li>它便于在 HTML 模板中轻松定位 JS 代码里的对应方法实现。</li>
 <li>因为你无须在 JS 里手动绑定事件，你的 ViewModel 代码可以是非常纯粹的逻辑，和 DOM 完全解耦。这会更易于测试。</li>
